@@ -153,7 +153,7 @@ async def post_cadastrar(
             nome=dto.nome,
             email=dto.email,
             senha=criar_hash_senha(dto.senha),
-            perfil=Perfil.CLIENTE.value  # Sempre cliente no cadastro público
+            perfil=Perfil.ESTUDANTE.value  # Sempre cliente no cadastro público
         )
 
         # Inserir no banco
